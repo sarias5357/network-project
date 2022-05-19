@@ -1,0 +1,53 @@
+! Command: show running-config
+! device: localhost (vEOS, EOS-4.23.4M)
+!
+! boot system flash:/vEOS-lab.swi
+!
+transceiver qsfp default-mode 4x10G
+!
+spanning-tree mode mstp
+!
+no aaa root
+!
+username admin role network-admin secret sha512 $6$SDeuIqY2uFAKNkQb$aznkOpSewre6B4fyJyuc.6ROZvgC7euU2d69ixfRrJriJEpoO6uM202mhXVrYysFWUJSGroTbkattwb.bA5Zl0
+!
+interface Ethernet1
+   no switchport
+   ip address 10.10.1.2/24
+!
+interface Ethernet2
+   no switchport
+   ip address 10.10.2.2/24
+!
+interface Ethernet3
+!
+interface Ethernet4
+   no switchport
+   ip address 10.10.4.1/24
+!
+interface Ethernet5
+!
+interface Ethernet6
+!
+interface Ethernet7
+!
+interface Ethernet8
+!
+interface Ethernet9
+!
+interface Ethernet10
+!
+interface Ethernet11
+!
+interface Ethernet12
+!
+interface Management1
+   ip address 192.168.1.210/24
+!
+ip routing
+!
+ip route 0.0.0.0/0 10.10.4.2
+ip route 0.0.0.0/0 192.168.1.207
+ip route 0.0.0.0/0 192.168.1.208
+!
+end

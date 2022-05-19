@@ -1,0 +1,13 @@
+Device,Interface,IP address,Default gateway,default route
+PC1,e0,10.10.1.1/24,10.10.1.2,
+PC2,e0,10.10.2.1/24,10.10.2.2,
+PC3,e0,10.10.3.3/24,10.10.3.2,
+vEOS-1,Ethernet 1,10.10.1.2/24,,
+vEOS-1,Ethernet 2,10.10.2.2/24,,
+vEOS-1,Ethernet 4,10.10.4.1/24,,
+vEOS-2,Ethernet 4,10.10.4.2/24,,
+vEOS-2,Ethernet 3,10.10.3.2/24,,
+vEOS-2,Ethernet 12,10.10.5.2/24,,
+Ubuntu Server,ens1,10.10.5.1/24,10.10.5.2,
+vEOS-1,,,,10.10.4.2
+vEOS-2,,,,10.10.4.1
